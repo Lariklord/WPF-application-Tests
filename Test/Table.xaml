@@ -1,0 +1,95 @@
+﻿<Window x:Class="Test.Table"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test"
+        mc:Ignorable="d"
+       Title="Таблица лидеров" Height="450" Width="800" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ResizeMode="NoResize" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/fon.png"/>
+        </Grid.Background>
+
+        <Grid x:Name="tbl" Margin="57,10,47,42" RenderTransformOrigin="0.49,0.475" >
+            <Grid.RowDefinitions>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" >Позиция</Label>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" >Логин</Label>
+            <Label Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" >Правильных ответов</Label>
+            <Label Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" >Время</Label>
+
+            <Label x:Name="lb10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb11" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb12" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb13" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb20" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb21" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb22" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb23" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb30" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb31" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb32" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb33" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb40" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb41" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb42" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb43" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb50" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb51" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb52" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb53" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb60" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb61" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb62" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb63" Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb70" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb71" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb72" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb73" Grid.Row="7" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb80" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb81" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb82" Grid.Row="8" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb83" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb90" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb91" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb92" Grid.Row="9" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb93" Grid.Row="9" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+
+            <Label x:Name="lb100" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb101" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb102" Grid.Row="10" Grid.Column="2" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+            <Label x:Name="lb103" Grid.Row="10" Grid.Column="3" HorizontalAlignment="Center" FontSize="17" Foreground="White" ></Label>
+        </Grid>
+        <Button Content="Меню" HorizontalAlignment="Left" Margin="298,384,0,0" VerticalAlignment="Top" Width="181" Height="27" Cursor="Hand" Click="Button_Click" RenderTransformOrigin="0.477,1.58" />
+
+
+
+
+    </Grid>
+</Window>

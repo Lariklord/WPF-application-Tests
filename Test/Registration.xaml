@@ -1,0 +1,36 @@
+﻿<Window x:Class="Test.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ResizeMode="NoResize" KeyDown="Window_KeyDown" WindowStartupLocation="CenterScreen"  Closing="Window_Closing">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/fon.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="576*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Center" Height="380"  VerticalAlignment="Center" Width="536" Background="White" RenderTransformOrigin="0.534,0.436" Margin="131.5,22,125,19" Grid.ColumnSpan="2" Grid.Column="1">
+            <Label Content="Регистрация" HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Margin="148,0,146,0"/>
+            <Label Content="" HorizontalAlignment="Left" Width="536" Height="2"  VerticalAlignment="Top" Margin="0,58,0,0" Background="Black" />
+            <TextBox x:Name="LbName" HorizontalAlignment="Left" Height="32" Margin="65,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="24" FontFamily="Times New Roman" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" SelectionBrush="#FF5ED8D8"/>
+            <PasswordBox x:Name="LbPassword" HorizontalAlignment="Left" Margin="63,288,0,0" VerticalAlignment="Top" Width="277" Height="32" FontSize="24" FontFamily="Times New Roman" PasswordChar="*" BorderBrush="Black" BorderThickness="2" SelectionBrush="#FF5ED8D8"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Garamond"/>
+            <Label Content="Пароль" HorizontalAlignment="Left" Margin="63,258,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Garamond"/>
+            <Button x:Name="Registr" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="63,341,0,0" VerticalAlignment="Top" Width="205" Height="29" FontFamily="Garamond" FontSize="24" Cursor="Hand" Click="Registr_Click" RenderTransformOrigin="0.244,0.69"/>
+            <Label Content="Логин" HorizontalAlignment="Left" Margin="65,193,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Garamond"/>
+            <TextBox x:Name="LbLogin" HorizontalAlignment="Left" Height="32" Margin="65,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="24" FontFamily="Times New Roman" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" SelectionBrush="#FF5ED8D8"/>
+            <TextBox x:Name="LbSurname" HorizontalAlignment="Left" Height="32" Margin="65,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="24" FontFamily="Times New Roman" BorderThickness="2" BorderBrush="Black" RenderTransformOrigin="0.5,0.5" SelectionBrush="#FF5ED8D8"/>
+            <Label Content="Фамилия" HorizontalAlignment="Left" Margin="65,131,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Garamond" RenderTransformOrigin="0.501,0.011"/>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
